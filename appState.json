@@ -1,0 +1,102 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "28999050-27aa-47c4-b4db-9558854c6b6a": {
+        "id": "28999050-27aa-47c4-b4db-9558854c6b6a",
+        "parent": null,
+        "name": "243Test",
+        "type": "DIRECTORY",
+        "isDirectory": true,
+        "children": [
+          "3941f737-c7c0-491f-b723-22b3a9884576"
+        ],
+        "isRemovable": false,
+        "filePath": "243Test"
+      },
+      "3941f737-c7c0-491f-b723-22b3a9884576": {
+        "id": "3941f737-c7c0-491f-b723-22b3a9884576",
+        "parent": "28999050-27aa-47c4-b4db-9558854c6b6a",
+        "name": "lambda.js",
+        "type": "LAMBDA_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "243Test/lambda.js",
+        "code": "exports.handler = function(event, context, callback) {\n    \n    \n    callback(null, {\"message\": \"Successfully executed\"});\n}",
+        "triggers": [
+          {
+            "resourceName": "apigusEast1Api243helloget",
+            "config": {}
+          }
+        ],
+        "config": {
+          "runtime": "nodejs8.10",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        }
+      }
+    },
+    "deletedFiles": [],
+    "rootNode": "28999050-27aa-47c4-b4db-9558854c6b6a",
+    "openFiles": [
+      "3941f737-c7c0-491f-b723-22b3a9884576"
+    ],
+    "currentFileId": "3941f737-c7c0-491f-b723-22b3a9884576",
+    "resources": {
+      "apigusEast1Api243helloget": {
+        "name": "apigusEast1Api243helloget",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-1",
+          "apiMode": 0,
+          "apiName": "Api243",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "hello",
+          "resourcePath": "/hello",
+          "restMethod": "GET",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "staging",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": {}
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "243Test",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "platformRegions": {},
+    "lastSave": 1553493674534
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "243Test",
+      "url": "https://github.com/sigmaidetest/243Test"
+    }
+  }
+}
